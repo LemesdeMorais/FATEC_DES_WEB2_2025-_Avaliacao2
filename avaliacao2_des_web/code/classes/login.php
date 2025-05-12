@@ -8,18 +8,21 @@ class Login
 
     public function verificar_credenciais($name, $password)
     {
-        if ($name == $this->name) {
-            if ($password == $this->password) {
-                $_SESSION["logged_in"] = TRUE;
-                return TRUE;
-            }
+        if ($name == $this->name && $password === $this->password) {
+            $_SESSION["logged_in"] = TRUE;
+            $_SESSION["user"] = $this->name;
+            return TRUE;
+
         }
         return FALSE;
     }
 
     public function verificar_logado()
     {
-        if ($_SESSION["logged_in"]) {
+        if (
+            isset($_SESSION["logged_in"]) && $_SESSION['logged_in'] === true &&
+            isset($_SESSION['user']) && $_SESSION['user'] === $this->name
+        ) {
             return TRUE;
         }
         $this->logout();
@@ -27,6 +30,7 @@ class Login
 
     public function logout()
     {
+        session_unset();
         session_destroy();
         header("Location: index.php");
         exit();
