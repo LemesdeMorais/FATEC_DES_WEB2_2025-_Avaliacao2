@@ -52,19 +52,19 @@ Sistema de autenticação simples com verificação de usuário e senha.
 📝 Cadastro de novos produtos
 Permite adicionar produtos com nome, descrição, categoria e preço.
 
-📷 Adicione um screenshot aqui:
+📷 Cadastro de produtos:
 ![Cadastro Screenshot](screen/cadastro.png)
 
 📋 Listagem de todos os produtos
 Exibe uma tabela com todos os produtos cadastrados.
 
-📷 Adicione um screenshot aqui:
+📷 Listagem dos produtos cadastrados:
 ![Listagem Screenshot](screen/lista.png)
 
-🗑️ Remoção de produtos
+🗑️ Remoção de produtos 
 Permite remover um produto diretamente da listagem.
 
-📷 Adicione um screenshot aqui:
+📷 Remoção de produtos cadastrados:
 ![Remoção Screenshot](screen/remover.png)
 
 
