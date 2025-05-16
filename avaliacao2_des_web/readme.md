@@ -1,3 +1,6 @@
+# 🧵 Lojinha Artesanal
+
+> Sistema web simples para gerenciamento de produtos artesanais. Ideal para fins didáticos, com funcionalidades como login, cadastro, listagem e remoção de produtos.
 
 ---
 
@@ -6,66 +9,81 @@
 - **Usuário:** `admin`  
 - **Senha:** `admin`
 
-Essas credenciais estão fixas na classe `Login`, no arquivo `classes/login.php`.
+> Essas credenciais estão fixas na classe `Login`, no arquivo `classes/login.php`.
 
 ---
 
-## 🛠️ Como rodar o projeto
+## 🛠️ Como Rodar o Projeto
 
-1. Clone ou baixe o repositório:
-    ```bash
-    git clone https://github.com/seu-usuario/lojinha-artesanal.git
-    ```
+1. **Clone ou baixe o repositório:**
 
-2. Coloque os arquivos na pasta `htdocs` do XAMPP:
-    ```
-    C:\\xampp\\htdocs\\avaliacao2_des_web
-    ```
+   ```bash
+   git clone https://github.com/LemesdeMorais/FATEC_DES_WEB2_2025-_Avaliacao2/blob/main/avaliacao2_des_web.git
 
-3. Inicie o **Apache** e **MySQL** pelo XAMPP.
+2. **Coloque os arquivos na pasta htdocs do XAMPP:**
+    C:\xampp\htdocs\avaliacao2_des_web
 
-4. Crie o banco de dados MySQL:
+3. **Inicie o Apache e o MySQL pelo XAMPP**
 
-    ```sql
-    CREATE DATABASE artesanato_db;
+4. **Crie o banco de dados no MySQL:**
+CREATE DATABASE artesanato_db;
 
-    USE artesanato_db;
+USE artesanato_db;
 
-    CREATE TABLE produtos_artesanais (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        nome VARCHAR(255) NOT NULL,
-        preco DECIMAL(10,2) NOT NULL,
-        descricao TEXT NOT NULL,
-        categoria VARCHAR(100) NOT NULL
-    );
-    ```
+CREATE TABLE produtos_artesanais (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    preco DECIMAL(10,2) NOT NULL,
+    descricao TEXT NOT NULL,
+    categoria VARCHAR(100) NOT NULL
+);
 
-5. Acesse no navegador:
+5. **Acesse a aplicação no navegador:**
+http://localhost/avaliacao2_des_web/index.php
 
-    ```
-    http://localhost/avaliacao2_des_web/index.php
-    ```
 
----
+✅ Funcionalidades
+🔑 Login e controle de sessão
+Sistema de autenticação simples com verificação de usuário e senha.
 
-## ✅ Funcionalidades
+📷 Login:
+![Login Screenshot](screen/login.png)
 
-- Login e controle de sessão
-- Cadastro de novos produtos
-- Listagem de todos os produtos
-- Remoção de produtos
-- Mensagens de feedback ao usuário
+📝 Cadastro de novos produtos
+Permite adicionar produtos com nome, descrição, categoria e preço.
 
----
+📷 Cadastro de produtos:
+![Cadastro Screenshot](screen/cadastro.png)
 
-## 📌 Observações
+📋 Listagem de todos os produtos
+Exibe uma tabela com todos os produtos cadastrados.
 
-- O banco de dados precisa estar corretamente configurado antes de testar o cadastro.
-- Os erros são exibidos em caso de falha na conexão ou execução do SQL.
+📷 Listagem dos produtos cadastrados:
+![Listagem Screenshot](screen/lista.png)
 
----
+🗑️ Remoção de produtos 
+Permite remover um produto diretamente da listagem.
 
-## 📄 Licença
+📷 Remoção de produtos cadastrados:
+![Remoção Screenshot](screen/remover.png)
 
-Este projeto é apenas para fins didáticos e não possui licença aberta.
-"""
+
+📌 Observações
+O banco de dados precisa estar corretamente configurado antes de testar o sistema.
+
+Em caso de falhas na conexão ou execução do SQL, mensagens de erro são exibidas para facilitar o debug.
+
+💻 Tecnologias Utilizadas
+PHP
+
+MySQL
+
+HTML/CSS
+
+XAMPP (ambiente local)
+
+📄 Licença
+Este projeto é apenas para fins didáticos e não possui licença aberta para uso comercial.
+
+🤝 Contribuições
+Sinta-se à vontade para fazer melhorias ou sugestões. Pull requests são bem-vindos! 😄
